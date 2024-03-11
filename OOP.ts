@@ -26,6 +26,9 @@ class Teacher extends Person{
     this.Exp = Exp;
     this.subject=subject;
       }
+      speak(){
+        console.log(`${this.Name} is Speaking`)
+    }
 }
 
 const person = new Person ("Saeed",18,1)
@@ -33,3 +36,6 @@ const person = new Person ("Saeed",18,1)
 console.log(person.Age)
 
 person.speak();
+
+const teacher = new Teacher("Waheed",17,1,"Math",4)
+teacher.speak();
